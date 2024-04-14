@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GuardianLink</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        main {
+            flex: 1;
+            width: 90%; /* Responsive width */
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="./logo1.png" alt="GuardianLink Logo" style="width: 100px; height: 100px;">
+    <h1>Welcome to GuardianLink</h1>
+    <nav>
+        <a href="#admin-login">Admin Login</a>
+        <a href="#volunteer-login">Volunteer Login</a>
+        <a href="#user-login">User Login</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Empowering Non-Profits Through Cybersecurity</h2>
+        <p>GuardianLink provides essential cybersecurity services to non-profit organizations</p>
+    </section>
+
+    <section id="admin-login">
+        <h2>Admin Login</h2>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In as Admin</button>
+            <button type="button">Create Admin Account</button>
+        </form>
+    </section>
+
+    <section id="volunteer-login">
+        <h2>Volunteer Login</h2>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In as Volunteer</button>
+            <button type="button">Create Volunteer Account</button>
+
+        </form>
+    </section>
+
+    <section id="user-login">
+        <h2>Cyber Security User Login </h2>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In as User</button>
+            <button type="button">Create User Account</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>GuardianLink empowers non-profits with essential cybersecurity services to safeguard their data and resources in a digital world where security is a must, not just for businesses but for vulnerable non-profits operating on tight budgets; by providing access to top-tier cybersecurity expertise and tools, GuardianLink enhances their security, making these organizations less attractive to cybercriminals and helping them focus on their mission. Additionally, GuardianLink invites cybersecurity professionals and volunteers to join and contribute to a safer digital future for non-profits, emphasizing collaboration and active participation in bolstering cybersecurity defenses. GuardianLink aims to strengthen cybersecurity defenses of non-profit organizations by connecting them with skilled cybersecurity volunteers, providing robust, reliable, and accessible support to those making the world a better place. Founded in 2021 by a group of cybersecurity experts and philanthropists, it started as a small initiative to help local charities protect themselves online, and has since expanded across the country, enhancing its service offerings and volunteer network.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>At GuardianLink, we specialize in tailored cybersecurity solutions for non-profits, addressing unique challenges to safeguard digital assets and sensitive information. Our services include vulnerability assessments, incident response, and continuous monitoring, supported by education and training sessions to equip staff with necessary skills, ensuring security and preparedness against cyber threats. We also provide custom security solutions to meet specific organizational needs.</p>
+    </section>
+
+
+</main>
+
+<footer>
+    <p>GuardianLink &copy; 2024 licensed under the MIT License</p>
+</footer>
+</body>
 </html>
